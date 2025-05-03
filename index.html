@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Epam Practice Catalogue</h1>
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#" data-category="all">All</a></li>
+                <li><a href="#" data-category="Electronics">Electronics</a></li>
+                <li><a href="#" data-category="Clothing">Clothing</a></li>
+                <li><a href="#" data-category="Books">Books</a></li>
+            </ul>
+        </section>
+        <section id="products">
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Epam Practice Catalogue. All rights reserved.</p>
+        <a href="#">Terms and Conditions</a>
+    </footer>
+</body>
+</html>
